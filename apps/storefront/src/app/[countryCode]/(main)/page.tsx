@@ -6,7 +6,7 @@ import { getRegion } from "@lib/data/regions"
 import ProductPreview from "@modules/products/components/product-preview"
 
 export const metadata: Metadata = {
-  title: "Cross Docking | Street. Style. Statement.",
+  title: "Born To Risk Win",
   description:
     "Cross Docking — premium streetwear. Clean, minimal, uncompromising.",
 }

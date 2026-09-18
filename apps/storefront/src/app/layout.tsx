@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     default: "Cross Docking",
     template: "%s | Cross Docking",
   },
-  description: "Cross Docking — Street. Style. Statement.",
+  description: "Cross Docking — Born To Risk Win.",
 }
 
 export default function RootLayout(props: { children: React.ReactNode }) {

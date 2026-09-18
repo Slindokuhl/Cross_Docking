@@ -4,12 +4,12 @@ import WhatsAppButton from "@modules/common/components/whatsapp-button"
 const Hero = () => {
   return (
     <div className="h-screen w-full bg-white relative flex flex-col items-center justify-center text-center px-6">
-      <span className="text-xs uppercase tracking-[0.4em] text-black/60 mb-6">
-        Street. Style. Statement.
-      </span>
-      <h1 className="text-6xl small:text-8xl font-light tracking-[0.15em] uppercase text-black mb-10">
+      <h1 className="text-6xl small:text-8xl font-light tracking-[0.15em] uppercase text-black mb-4">
         Cross Docking
       </h1>
+      <p className="text-sm small:text-base italic tracking-wide text-black/70 mb-10">
+        Born To Risk Win
+      </p>
       <div className="flex flex-col small:flex-row items-center gap-4">
         <LocalizedClientLink href="/store">
           <button className="px-12 py-4 bg-black text-white text-xs uppercase tracking-[0.25em] hover:bg-black/80 transition-colors">

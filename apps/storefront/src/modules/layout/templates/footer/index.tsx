@@ -18,9 +18,6 @@ export default async function Footer() {
             >
               Cross Docking
             </LocalizedClientLink>
-            <p className="text-xs uppercase tracking-widest text-black/50">
-              Street. Style. Statement.
-            </p>
             <WhatsAppButton
               message="Hi Cross Docking, I'd like to place an order."
               className="inline-block w-fit px-6 py-3 bg-black text-white text-xs uppercase tracking-widest hover:bg-black/80 transition-colors"
@@ -28,7 +25,7 @@ export default async function Footer() {
               Order via WhatsApp
             </WhatsAppButton>
           </div>
-          <div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2">
+          <div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2 small:grid-cols-3">
             {productCategories && productCategories?.length > 0 && (
               <div className="flex flex-col gap-y-4">
                 <span className="text-xs uppercase tracking-widest text-black">
@@ -91,6 +88,18 @@ export default async function Footer() {
                   </LocalizedClientLink>
                 </li>
               </ul>
+            </div>
+            <div className="flex flex-col gap-y-4">
+              <span className="text-xs uppercase tracking-widest text-black">
+                Visit
+              </span>
+              <p className="text-black/60 txt-small leading-relaxed">
+                50 Fred Gwala Close
+                <br />
+                Umlazi, KwaZulu-Natal
+                <br />
+                South Africa
+              </p>
             </div>
           </div>
         </div>

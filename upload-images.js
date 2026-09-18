@@ -7,8 +7,14 @@ const MEDUSA_URL = process.env.MEDUSA_URL || "http://localhost:9000";
 // Fill these in once photos are available, e.g.:
 // "oversized-tee": ["./images/oversized-tee-front.jpg", "./images/oversized-tee-back.jpg"],
 const productImages = {
-  "oversized-tee": [],
-  "logo-tee": [],
+  "oversized-tee": [
+    "./product-images/arcade-unisex-tee.jpeg",
+    "./product-images/arcade-unisex-tee-lifestyle.jpeg",
+  ],
+  "logo-tee": [
+    "./product-images/dockboyz-soccer-tee.jpeg",
+    "./product-images/dockboyz-soccer-tee-lifestyle.jpeg",
+  ],
   "pullover-hoodie": [],
   "zip-hoodie": [],
   "cargo-joggers": [],
