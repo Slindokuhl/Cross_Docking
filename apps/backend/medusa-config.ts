@@ -12,5 +12,21 @@ module.exports = defineConfig({
       jwtSecret: process.env.JWT_SECRET,
       cookieSecret: process.env.COOKIE_SECRET,
     }
-  }
+  },
+  modules: [
+    {
+      resolve: "@medusajs/file",
+      options: {
+        providers: [
+          {
+            resolve: "@medusajs/file-local",
+            id: "local",
+            options: {
+              backend_url: `${process.env.BACKEND_URL || "http://localhost:9000"}/static`,
+            },
+          },
+        ],
+      },
+    },
+  ],
 })
