@@ -58,6 +58,10 @@ export const listProducts = async ({
 
   const next = {
     ...(await getCacheOptions("products")),
+    // Product data can change from the admin dashboard directly (price,
+    // images, stock), outside this app's own cache-tag invalidation, so
+    // fall back to a short revalidation window rather than caching forever.
+    revalidate: 60,
   }
 
   return sdk.client
